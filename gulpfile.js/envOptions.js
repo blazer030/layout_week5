@@ -45,6 +45,7 @@ let envOptions = {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`,
+      `${nodePath}/@ckeditor/ckeditor5-build-classic/build/ckeditor.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

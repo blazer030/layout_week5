@@ -2,6 +2,12 @@
     width: 296px;
     min-height: 100vh;
 
+    .sidebar-logo {
+        img {
+            height: 36px;
+        }
+    }
+
     .nav-item {
         position: relative;
         &:not(:last-child) {
@@ -18,11 +24,5 @@
 
     .nav-link {
         padding: 0.5rem 2rem;
-    }
-
-    .user-image {
-        width: 40px;
-        height: 40px;
-        border-radius: 24px;
     }
 }

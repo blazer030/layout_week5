@@ -1,5 +1,10 @@
-console.log('Hello!');
-
 $(document).ready(() => {
-  console.log('HesSchool Hello!');
+  ClassicEditor
+    .create( document.querySelector( '#editor' ) )
+    .then( editor => {
+        console.log( editor );
+    } )
+    .catch( error => {
+        console.error( error );
+    } );
 });
