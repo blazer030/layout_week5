@@ -3994,7 +3994,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #ced4da;
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -4036,15 +4036,15 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.75rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ced4da; }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
 
 .card-footer {
   padding: 0.75rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #f8f9fa;
+  border-top: 1px solid #ced4da; }
   .card-footer:last-child {
     border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
@@ -9218,9 +9218,6 @@ p {
 
 .task-content mark, .task-content .mark {
   color: #198754; }
-
-.collapseReply {
-  width: 550px; }
 
 .user-image {
   width: 40px;
