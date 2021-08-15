@@ -9230,14 +9230,10 @@ p {
 
 .admin-view-dropdown {
   line-height: 1; }
-  .admin-view-dropdown .expand_more {
-    display: none; }
-  .admin-view-dropdown .expand_less {
-    display: unset; }
-  .admin-view-dropdown.collapsed .expand_more {
-    display: unset; }
-  .admin-view-dropdown.collapsed .expand_less {
-    display: none; }
+  .admin-view-dropdown .expand::after {
+    content: 'expand_more'; }
+  .admin-view-dropdown.collapsed .expand::after {
+    content: 'expand_less'; }
 
 .user-image {
   width: 40px;
