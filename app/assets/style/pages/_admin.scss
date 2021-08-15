@@ -1,0 +1,27 @@
+.admin-modal-image {
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+
+.admin-view-dropdown {
+    line-height: 1;
+    .expand_more {
+        display: none;
+    }
+    
+    .expand_less {
+        display: unset;
+    }
+
+    &.collapsed {
+        .expand_more {
+            display: unset;
+        }
+        
+        .expand_less {
+            display: none;
+        }
+    }
+}
+

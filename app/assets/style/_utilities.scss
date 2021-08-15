@@ -13,3 +13,11 @@
     right: 24px;
     bottom: 16px;
 }
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.form-control[readonly] {
+    background: $gray-100;
+}

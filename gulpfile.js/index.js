@@ -4,7 +4,6 @@ const autoprefixer = require('autoprefixer');
 const minimist = require('minimist');
 const browserSync = require('browser-sync').create();
 const { envOptions } = require('./envOptions');
-const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
 
 let options = minimist(process.argv.slice(2), envOptions);
@@ -68,9 +67,6 @@ function minsass() {
       includePaths: ['node_modules']
     }).on('error', $.sass.logError))
     .pipe($.postcss(plugins))
-    .pipe(cssnano({
-      safe: true
-    }))
     .pipe(rename({suffix: '.min' }))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest(envOptions.style.path))
